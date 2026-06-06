@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+/* -------------------------------------------------------------------------- */
+/*                               dynamic colours                              */
+/* -------------------------------------------------------------------------- */
+:root {
+  --color-primary: #1c355c;
+  --color-accent: #efae1e;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                       Use in Tailwind utility classes                      */
+/* -------------------------------------------------------------------------- */
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.bg-accent {
+  background-color: var(--color-accent);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.border-primary {
+  border-color: var(--color-primary);
+}
+
+.border-accent {
+  border-color: var(--color-accent);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Alert styles                                */
+/* -------------------------------------------------------------------------- */
+.animate-toast-in {
+  animation: toastIn 0.5s ease forwards;
+}
+
+.animate-toast-out {
+  animation: toastOut 0.5s ease forwards;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                          navbar linkes hover style                         */
+/* -------------------------------------------------------------------------- */
+.nav-link {
+  position: relative;
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: var(--color-primary);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Active route */
+.nav-link-active {
+  color: var(--color-accent);
+}
+
+/* .nav-link-active::after {
+  width: 100%;
+  background: var(--color-primary);
+} */
