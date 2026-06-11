@@ -2,7 +2,7 @@ import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
 import emailjs from "@emailjs/browser";
-import Alert from "./Alert";
+import Alert from "../UI/Alert";
 
 export default function Contact() {
   const formRef = useRef();
@@ -71,7 +71,7 @@ export default function Contact() {
 
   return (
     <>
-      <section className={`${isContact ? "min-h-screen pt-24 pb-12" : ""}`}>
+      <section className={`${isContact ? "min-h-screen pt-16 md:pt-24 pb-8 md:pb-12" : ""}`}>
         <div className="max-w-7xl mx-auto px-6 grid gap-5 md:gap-10">
           <div className="text-center grid gap-4 md:gap-6">
             <span className="text-lg md:text-[34px] text-primary font-bold uppercase tracking-wider border-b-2 border-primary mx-auto">
