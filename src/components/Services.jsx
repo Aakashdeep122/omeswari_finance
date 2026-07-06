@@ -8,7 +8,6 @@ import {
   Car,
   Landmark,
   Coins,
-  Warehouse,
 } from "lucide-react";
 
 export default function Services() {
@@ -45,13 +44,8 @@ export default function Services() {
       description: "Meet personal financial needs with hassle-free approvals.",
     },
     {
-      title: "Two Wheeler Loan",
-      icon: Bike,
-      description: "Easy financing options for your preferred two-wheeler.",
-    },
-    {
       title: "Used Vehicle Loan",
-      icon: Car,
+      icon: Bike,
       description: "Finance pre-owned vehicles with attractive terms.",
     },
     {
@@ -61,14 +55,16 @@ export default function Services() {
     },
     {
       title: "Four Wheeler Loan",
-      icon: Warehouse,
+      icon: Car,
       description: "Drive your dream car home with flexible repayment plans.",
     },
   ];
 
   return (
     <>
-      <section className={`${isServices ? "min-h-screen pt-16 md:pt-24 pb-8 md:pb-12" : ""}`}>
+      <section
+        className={`${isServices ? "min-h-screen pt-16 md:pt-24 pb-8 md:pb-12" : ""}`}
+      >
         <div className="max-w-7xl mx-auto px-6 flex flex-col gap-6 md:gap-12">
           <div className="text-center grid gap-4 md:gap-6">
             <span className="text-lg md:text-[34px] text-primary font-bold uppercase tracking-wider border-b-2 border-primary mx-auto">

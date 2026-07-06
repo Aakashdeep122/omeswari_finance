@@ -101,7 +101,7 @@ export default function Contact() {
                   <Phone className="text-accent w-5 h-5 md:w-7 md:h-7 flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold">Phone</p>
-                    <p>+91 9151097514</p>
+                    <p>+91 9266831515</p>
                     <p>+91 9540556006</p>
                   </div>
                 </div>

@@ -39,7 +39,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="https://wa.me/919151097514"
+            href="https://wa.me/9540556006"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#1c355c] hover:text-[#25D366] transition-all duration-300 hover:scale-110"
